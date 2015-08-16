@@ -40,10 +40,13 @@ class MatController extends Controller
      */
     public function index($week = null)
     {
+        // Om vi inte har vecka att utgår ifrån
         if (!$week) {
+            // Om vi tittar på helgen, visa nästa veckas meny
             if ($this->carbon->isWeekend()) {
                 $week = $this->carbon->addWeek(1)->weekOfYear;
             } else {
+                // denna veckan
                 $week = $this->carbon->weekOfYear;
             }
         }
@@ -52,24 +55,6 @@ class MatController extends Controller
             $this->randomizeWeek($week);
         }
 
-        // Kolla initialt om det finns en meny för denna veckan
-        // finns det ingen meny, slumpa fram en veckomeny för denna veckan.
-        // Är vi på helgen så tar vi och skapar upp nästa veckas meny
-/*        if ($this->carbon->isWeekend()) {
-            $nextWeek = $this->carbon->addWeek(1);
-
-            // Kolla så det inte redan finns en meny för nästa vecka
-            if (!$this->veckoMeny->where("vecka", $nextWeek->weekOfYear)->first()) {
-                $this->randomizeWeek($nextWeek->weekOfYear);
-            }
-            $week = $nextWeek->weekOfYear;
-        } else {
-            $week = $this->carbon->weekOfYear;
-            if (!$weekMenu = $this->veckoMeny->where("vecka", $week)->first()) {
-                $this->randomizeWeek($week);
-            }
-        }
-*/
         // Orka locale
         $veckodagar = [
             "Monday" => "Måndag",
