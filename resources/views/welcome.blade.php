@@ -4,6 +4,7 @@
         <title>Kvällsmat Oktorp</title>
 
         <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
         <style>
             html, body {
@@ -31,7 +32,7 @@
             }
 
             .vecka {
-                font-size: 98px;
+                font-size: 128px;
                 font-weight: 900;
             }
             .mat {
@@ -48,13 +49,13 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="vecka">vecka {{ $week }}</div>
+                <div class="vecka">v. {{ $week }}</div>
                 @foreach($veckoMeny as $meny)
                     <div class="mat @if ($today == $meny->datum) idag @endif">
                         {{ $weekdays[strftime("%A", strtotime($meny->datum))] }} | {{ $meny->matratt->namn }}
                     </div>
                 @endforeach
-                <a href="/{{ $week - 1 }}" class="btn-sm">Förra vecka</a> | <a href="/{{ $week + 1 }}" class="btn-sm">Nästa vecka</a>
+                <a href="/{{ $week - 1 }}" class="btn btn-default">Förra veckan</a> <a href="/{{ $week + 1 }}" class="btn btn-primary pull-right">Nästa vecka</a>
             </div>
         </div>
     </body>
