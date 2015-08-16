@@ -54,6 +54,7 @@
                         {{ $weekdays[strftime("%A", strtotime($meny->datum))] }} | {{ $meny->matratt->namn }}
                     </div>
                 @endforeach
+                <a href="/{{ $week - 1 }}" class="btn-sm">Förra vecka</a> | <a href="/{{ $week + 1 }}" class="btn-sm">Nästa vecka</a>
             </div>
         </div>
     </body>

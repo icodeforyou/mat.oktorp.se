@@ -20,42 +20,23 @@
     <favorites_list name="mat.oktorp.se" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54375">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.60186416">
-                  <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="MatController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MatController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5206391">
-                  <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7243675">
+              <caret line="56" column="75" selection-start-line="56" selection-start-column="75" selection-end-line="56" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/Http/Controllers/matController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/veckoMeny.php" />
         <option value="$PROJECT_DIR$/app/Mat.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
@@ -66,8 +47,9 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Locale.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MatController.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
       </list>
     </option>
   </component>
@@ -1016,16 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11989574">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <marker date="1439662374000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1239,18 +1211,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60186416">
-          <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
-          <folding />
+        <state vertical-scroll-proportion="0.183755">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <marker date="1439728226000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MatController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5206391">
-          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.66311586">
+          <caret line="116" column="39" selection-start-line="116" selection-start-column="39" selection-end-line="116" selection-end-column="39" />
+          <folding>
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder=" @var Mat ..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder=" @var VeckoMeny ..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder=" @var Carbon ..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder=" @param $week ..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439729690000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7243675">
+          <caret line="56" column="75" selection-start-line="56" selection-start-column="75" selection-end-line="56" selection-end-column="75" />
           <folding />
         </state>
       </provider>

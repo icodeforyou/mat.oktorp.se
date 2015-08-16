@@ -13,4 +13,4 @@
 
 use App\Http\Controllers\matController;
 
-Route::get("/", "MatController@index");
+Route::get("/{week?}", "MatController@index");

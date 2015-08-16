@@ -35,14 +35,27 @@ class MatController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param $week
      * @return Response
      */
-    public function index()
+    public function index($week = null)
     {
+        if (!$week) {
+            if ($this->carbon->isWeekend()) {
+                $week = $this->carbon->addWeek(1)->weekOfYear;
+            } else {
+                $week = $this->carbon->weekOfYear;
+            }
+        }
+
+        if (!$this->veckoMeny->where("vecka", $week)->first()) {
+            $this->randomizeWeek($week);
+        }
+
         // Kolla initialt om det finns en meny för denna veckan
         // finns det ingen meny, slumpa fram en veckomeny för denna veckan.
         // Är vi på helgen så tar vi och skapar upp nästa veckas meny
-        if ($this->carbon->isWeekend()) {
+/*        if ($this->carbon->isWeekend()) {
             $nextWeek = $this->carbon->addWeek(1);
 
             // Kolla så det inte redan finns en meny för nästa vecka
@@ -56,6 +69,7 @@ class MatController extends Controller
                 $this->randomizeWeek($week);
             }
         }
+*/
         // Orka locale
         $veckodagar = [
             "Monday" => "Måndag",
@@ -84,13 +98,24 @@ class MatController extends Controller
         // Ladda alla maträtter som inte blivit serverade
         // eller blivit serverade längre bak i tiden än en vecka
         $matratter = $this->Mat;
-        $sunday = $this->carbon->startOfWeek()->subDay(1);
+        $monday = $this->carbon->startOfWeek();
+
+        $weekDiff = $week - $monday->weekOfYear;
+
+        if ($weekDiff < 0) {
+            $monday = $monday->subWeeks(abs($weekDiff));
+        } else {
+            $monday = $monday->addWeeks($weekDiff);
+        }
+
+        $sunday = $monday->subDay(1);
 
         for($i = 0; $i < 5; $i++) {
 
             $datum = $sunday->addDay(1);
+
             $randomMatratt = $matratter
-                                ->where("serverat_datum", "<", $this->carbon->now()->subWeek(1)->toDateTimeString())
+                                ->where("serverat_datum", "<", $datum->toDateTimeString())
                                 ->orWhere("serverat_datum", '=', "0000-00-00 00:00:00")
                                 ->get()->random(1);
             $randomMatratt->serverat_datum = $datum->toDateTimeString();
