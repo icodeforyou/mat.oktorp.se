@@ -56,12 +56,21 @@ class MatController extends Controller
                 $this->randomizeWeek($week);
             }
         }
+        // Orka locale
+        $veckodagar = [
+            "Monday" => "Måndag",
+            "Tuesday" => "Tisdag",
+            "Wednesday" => "Onsdag",
+            "Thursday" => "Torsdag",
+            "Friday" => "Fredag"
+        ];
 
         // finns det en meny för denna veckan visa dagens maträtt
         // och resten av veckans maträtter
         return View("welcome")->with([
             "veckoMeny" => $this->veckoMeny->with("matratt")->where("vecka", $week)->get(),
             "week" => $week,
+            "weekdays" => $veckodagar,
             "today" => $this->carbon->toDateString()
         ]);
     }

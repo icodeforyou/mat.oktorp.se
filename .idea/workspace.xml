@@ -23,11 +23,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.54375">
       <split-first>
         <leaf>
-          <file leaf-file-name="Locale.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Locale.php">
+          <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4900133">
-                  <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+                <state vertical-scroll-proportion="0.60186416">
+                  <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
                   <folding />
                 </state>
               </provider>
@@ -40,8 +40,8 @@
           <file leaf-file-name="MatController.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MatController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.64314246">
-                  <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.5206391">
+                  <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -64,9 +64,9 @@
         <option value="$PROJECT_DIR$/database/migrations/2015_08_15_173654_createVeckomenyTable.php" />
         <option value="$PROJECT_DIR$/app/VeckoMeny.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Locale.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MatController.php" />
       </list>
     </option>
@@ -271,7 +271,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22421876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22421876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1170,41 +1170,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Locale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.551265">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <marker date="1439726657000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439726657000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439726657000" expanded="true" signature="-1:-1" placeholder=" Handle an incoming request. ..." />
+            <marker date="1439726657000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70039946">
+          <caret line="761" column="9" selection-start-line="761" selection-start-column="9" selection-end-line="761" selection-end-column="9" />
+          <folding>
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 4, PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5.5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.3)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.2.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.3.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.0)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5)&lt;br/&gt; ..." />
+            <marker date="1436270830000" expanded="true" signature="-1:-1" placeholder=" (PHP 5 &amp;gt;= 5.1.2)&lt;br/&gt; ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0918775">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding>
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1439726455000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.60186416">
+          <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MatController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64314246">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Locale.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4900133">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.5206391">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding />
         </state>
       </provider>

@@ -51,7 +51,7 @@
                 <div class="vecka">vecka {{ $week }}</div>
                 @foreach($veckoMeny as $meny)
                     <div class="mat @if ($today == $meny->datum) idag @endif">
-                        {{ strftime("%A", strtotime($meny->datum)) }} | {{ $meny->matratt->namn }}
+                        {{ $weekdays[strftime("%A", strtotime($meny->datum))] }} | {{ $meny->matratt->namn }}
                     </div>
                 @endforeach
             </div>
